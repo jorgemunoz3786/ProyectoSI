@@ -1,12 +1,18 @@
-# Product Context: Autoescuela de Sistemas
+# Product Context: TowerArena
 
-## Visión del Proyecto
-El proyecto "Autoescuela de Sistemas" tiene como propósito establecer una plataforma integral (disponible en modalidad online y local) orientada a la enseñanza y simulación de conceptos fundamentales y avanzados de Sistemas Informáticos.
+## Visión
+Un RPG web de progresión vertical donde un héroe derrota monstruos en una torre.
 
-## Objetivos Principales
-- Proporcionar un entorno educativo estructurado para el aprendizaje de comandos de sistemas operativos (Windows y Linux).
-- Facilitar la comprensión y práctica sobre fundamentos de hardware, redes IP y gestión de contenedores.
-- Emular la experiencia estructurada de una autoescuela, ofreciendo tanto contenido teórico como evaluaciones prácticas para validar el conocimiento técnico adquirido.
+## Mecánicas Core
+- **Combate:** Basado en puntos de poder (Integer).
+- **Progresión:** Sistema de niveles y XP.
+- **Botín (Loot):** Drop de equipo aleatorio.
 
-## Público Objetivo
-Estudiantes, entusiastas de la tecnología y futuros profesionales del área de Sistemas que buscan consolidar sus conocimientos a través de una metodología práctica y escalonada.
+## Dificultad
+El poder de los monstruos crece de forma exponencial por cada piso que se avanza en la torre.
+
+## Persistencia
+Guardado automático en `localStorage` (en formato JSON). Se guardan los siguientes datos:
+- Piso actual
+- Nivel
+- Equipo

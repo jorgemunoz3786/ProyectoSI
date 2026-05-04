@@ -12,3 +12,23 @@ Instrucciones adicionales:
 Utiliza un tono técnico y profesional.
 No generes el código de la aplicación todavía.
 Confirma cuando hayas creado estos archivos para proceder al siguiente paso del flujo de trabajo.
+
+Actúa como un experto en desarrollo web. Vamos a iniciar el proyecto "TowerArena" siguiendo estrictamente la metodología Memory Bank.  
+Paso 1: Configuración del Memory Bank
+Crea una carpeta llamada memory-bank/ con los siguientes archivos iniciales:  
+productContext.md: Define la visión: Un RPG web de progresión vertical donde un héroe derrota monstruos en una torre.
+Mecánicas core: Combate basado en puntos de poder (Integer), sistema de niveles/XP, y drop de equipo aleatorio.
+Dificultad: El poder de los monstruos crece de forma exponencial por cada piso.
+Persistencia: Guardado automático en localStorage (formato JSON) del piso actual, nivel y equipo.
+systemPatterns.md: Define las reglas técnicas obligatorias:  
+Arquitectura: Separación total entre components.js (funciones puras que retornan strings de HTML/SVG para el héroe y monstruos) y app.js (lógica de combate, niveles y estado).  
+Combate: Crear un módulo de combate desacoplado para que sea fácilmente editable en el futuro (actualmente: heroPower > monsterPower = Victory).
+activeContext.md: Establece que estamos en la fase de "Setup de arquitectura y sistema de datos inicial".
+progress.md: Lista de tareas: 1. Setup del banco de memoria, 2. Estructura de archivos, 3. Lógica de escalado exponencial, 4. Renderizado de placeholders (rectángulos o imágenes de internet).  
+Paso 2: Estructura de Archivo
+Tras crear el Memory Bank, prepara el esqueleto del proyecto:
+index.html: Estructura base.
+app.js: Orquestador de la lógica y manejo del JSON de guardado.
+components.js: Funciones puras para los placeholders del héroe y los monstruos.  
+styles.css: Estilo visual de la torre.
+Por favor, confirma cuando el Memory Bank esté listo para empezar a generar el código de los componentes individuales.

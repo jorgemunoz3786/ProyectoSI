@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TowerArena</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>TowerArena</h1>
+            <div id="stats">
+                <span id="level-display">Nivel: 1</span> | 
+                <span id="floor-display">Piso: 1</span> | 
+                <span id="power-display">Poder: 10</span>
+            </div>
+        </header>
+        
+        <main id="tower-container">
+            <div id="arena">
+                <div id="hero-container"></div>
+                <div id="monster-container"></div>
+            </div>
+            
+            <div id="controls">
+                <button id="btn-attack">¡Atacar!</button>
+            </div>
+            
+            <div id="log-container"></div>
+        </main>
+    </div>
+
+    <script src="components.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
