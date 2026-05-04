@@ -1,0 +1,14 @@
+Actúa como un experto en desarrollo web y metodologías de IA. Vamos a trabajar en el Proyecto FINAL: Autoescuela de Sistemas, siguiendo estrictamente la metodología Memory Bank.  
+Tu primera tarea es crear la estructura de la carpeta memory-bank/ con los siguientes archivos y contenidos iniciales:
+productContext.md: Define la visión de una autoescuela online/local para aprender Sistemas (comandos Windows/Linux, hardware, redes IP, contenedores).  
+systemPatterns.md: Establece las reglas técnicas obligatorias:
+Arquitectura: Separación estricta de responsabilidades.  
+components.js: Solo funciones puras que devuelven HTML.  
+app.js: Manejo de la lógica y orquestación.  
+Los componentes deben ser modulares y encapsulados.  
+activeContext.md: Define que estamos en la fase inicial de configuración de la estructura base y definición de componentes.  
+progress.md: Crea una lista de control que incluya la creación de al menos 3 componentes (Test, Resultados, Imágenes).  
+Instrucciones adicionales:
+Utiliza un tono técnico y profesional.
+No generes el código de la aplicación todavía.
+Confirma cuando hayas creado estos archivos para proceder al siguiente paso del flujo de trabajo.
