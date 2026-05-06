@@ -32,3 +32,30 @@ app.js: Orquestador de la lógica y manejo del JSON de guardado.
 components.js: Funciones puras para los placeholders del héroe y los monstruos.  
 styles.css: Estilo visual de la torre.
 Por favor, confirma cuando el Memory Bank esté listo para empezar a generar el código de los componentes individuales.
+
+Prompt para Actualizar el Sistema de Combate
+Actúa como el arquitecto del proyecto. Necesito realizar un cambio profundo en las mecánicas de combate siguiendo la metodología Memory Bank.  
+
+Paso 1: Actualizar especificaciones
+Por favor, actualiza los siguientes archivos antes de generar código:
+
+systemPatterns.md: Modifica la sección de lógica de combate. El sistema ahora se basa en dados:
+
+Precisión: Se lanzan 2d6. Define un umbral de acierto (ej. mayor a 5) para que el héroe golpee.
+
+Daño base: 1d6.
+
+Escalado de Daño: Añade +1d6 extra cada 4 niveles del héroe, y +1d10 adicional cada 12 niveles.
+
+Escalado de Enemigos: La vida de los monstruos aumenta en +2 puntos fijos por cada nivel/piso.
+
+activeContext.md: Refleja que estamos rediseñando el motor de combate y la lógica de progresión de daño.
+
+progress.md: Marca como "En proceso" la nueva lógica de dados y el feedback visual de las tiradas.
+
+Paso 2: Implementación
+Una vez actualizados los archivos de specs, modifica el código:  
+
+En app.js: Implementa las funciones de lanzamiento de dados (randomizadores) y la nueva lógica de daño acumulativo.
+
+En components.js: Crea un nuevo componente modular llamado CombatLog que devuelva el HTML necesario para mostrar los resultados de los dados (ej: "¡Has sacado un 8 en precisión! Daño: 5").
